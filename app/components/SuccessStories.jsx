@@ -27,25 +27,25 @@ const SuccessStories = () => {
   };
 
   return (
-    <div className="bg-black text-white p-8">
+    <div className="bg-black text-white p-4 md:p-8">
       <div className="max-w-[1242px] mx-auto">
-        <h3 className="text-xl mb-6">Success stories</h3>
+        <h3 className="text-xl mb-4 md:mb-6 text-center">Success stories</h3>
 
-        <div className="mb-12">
-          <p className="text-4xl font-medium mb-8">
+        <div className="mb-8 md:mb-12">
+          <p className="text-xl md:text-2xl font-medium mb-4 md:mb-8">
             {stories[currentSlide].quote}
           </p>
 
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col items-center md:flex-row md:justify-between">
+            <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-0">
               <Image
                 src={stories[currentSlide].image}
                 alt={stories[currentSlide].author}
-                width={48}
-                height={48}
+                width={64}
+                height={64}
                 className="rounded-full"
               />
-              <div>
+              <div className="text-center md:text-left">
                 <p className="font-medium">{stories[currentSlide].author}</p>
                 <p className="text-gray-400">
                   {stories[currentSlide].position}
@@ -53,7 +53,7 @@ const SuccessStories = () => {
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
               <ButtonComponent
                 text="←"
                 onClick={handlePrevSlide}

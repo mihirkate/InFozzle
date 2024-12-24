@@ -24,6 +24,7 @@ export default function Home() {
       <BusinessModel />
       <IndustryVertical />
       <HowItWorks />
+      <Benefits />
       <FAQ />
       <SuccessStories />
       <Footer />

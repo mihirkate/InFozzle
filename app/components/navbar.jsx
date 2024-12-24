@@ -83,17 +83,17 @@ const Navbar = () => {
         <div className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden">
           <ul className="flex flex-col space-y-4 p-4">
             <li>
-              <a href="#" className="text-black hover:underline">
+              <a href="/" className="text-black ">
                 Investments
               </a>
             </li>
             <li>
-              <a href="#" className="text-black hover:underline">
+              <a href="/" className="text-black ">
                 Owners/Brokers
               </a>
             </li>
             <li>
-              <a href="#" className="text-black hover:underline">
+              <a href="/" className="text-black ">
                 Lorem Ipsum
               </a>
             </li>

@@ -63,7 +63,7 @@ const Footer = () => {
               <a href="/">
                 {" "}
                 <Image
-                  src="/images/Leveled.png" // Add your logo
+                  src="/images/LeveledLogo.png" // Add your logo
                   alt="Leveled Logo"
                   width={120}
                   height={40}
