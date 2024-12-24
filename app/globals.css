@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,7 +16,43 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Figtree', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2rem; /* Default for smaller screens */
+}
+@media (min-width: 640px) { /* sm */
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) { /* lg */
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive Container */
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media (min-width: 768px) { /* md */
+  .container {
+    max-width: 768px;
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 1024px) { /* lg */
+  .container {
+    max-width: 1024px;
+    padding: 2rem;
+  }
 }
